@@ -1,0 +1,8 @@
+namePrefix: customize-pre-post-sync-
+
+bases:
+- ../helm-guestbook
+
+resources:
+- pre-sync-job.yaml
+- post-sync-job.yaml
