@@ -1,4 +1,4 @@
-namePrefix: customize-pre-post-sync-
+namePrefix: customize-sync-
 
 bases:
 - ../helm-guestbook
