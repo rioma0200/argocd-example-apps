@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: eureka
-  namespace: global
+  namespace: globals
   annotations:
     helm.sh/hook-delete-policy: hook-succeeded
     helm.sh/hook-weight: "1"
@@ -10,7 +10,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: global
+    namespace: globals
     server: https://kubernetes.default.svc
   syncPolicy:
     automated: {}
