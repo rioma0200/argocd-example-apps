@@ -4,5 +4,3 @@ spec:
   source:
     repoURL: https://github.com/rioma0200/argocd-example-apps
     targetRevision: HEAD
-
-namespace: global-area
