@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: eureka
+  namespace: global
+  annotations:
+  helm.sh/hook-delete-policy: hook-succeeded
+  helm.sh/hook-weight: "1"
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: global
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: main
+    helm:
+      valueFiles:
+        - values-eureka.yaml
+    repoURL: https://github.com/rioma0200/argocd-example-apps
+    targetRevision: HEAD
