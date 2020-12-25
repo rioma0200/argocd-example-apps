@@ -4,8 +4,8 @@ metadata:
   name: config
   namespace: global
   annotations:
-  helm.sh/hook-delete-policy: hook-succeeded
-  helm.sh/hook-weight: "2"
+    helm.sh/hook-delete-policy: hook-succeeded
+    helm.sh/hook-weight: "2"
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
