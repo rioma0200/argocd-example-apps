@@ -16,7 +16,7 @@ spec:
     automated: {}
   project: default
   source:
-    path: main
+    path: cmp
     helm:
       valueFiles:
         - values-cp.yaml
