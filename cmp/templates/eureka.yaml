@@ -16,9 +16,10 @@ spec:
     automated: {}
   project: default
   source:
+    repoURL: https://github.com/rioma0200/argocd-example-apps
+    targetRevision: HEAD
     path: eureka
     helm:
       valueFiles:
         - values.yaml
-    repoURL: https://github.com/rioma0200/argocd-example-apps
-    targetRevision: HEAD
+

@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: pre-sleep-60
+  name: pre-sleep-30
   namespace: {{ .Values.namespace }}
   annotations:
     helm.sh/hook: pre-install
@@ -13,6 +13,6 @@ spec:
       containers:
       - name: sleep
         image: alpine:latest
-        command: ["sleep", "60"]
+        command: ["sleep", "30"]
       restartPolicy: Never
   backoffLimit: 0
