@@ -4,6 +4,8 @@
 
 replicaCount: 1
 
+namespace: test
+
 image:
   repository: gcr.io/heptio-images/ks-guestbook-demo
   tag: 0.2
