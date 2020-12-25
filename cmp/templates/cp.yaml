@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: config
+  name: cp
   namespace: global
   annotations:
     helm.sh/hook-delete-policy: hook-succeeded
-    helm.sh/hook-weight: "2"
+    helm.sh/hook-weight: "1"
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -19,6 +19,6 @@ spec:
     path: main
     helm:
       valueFiles:
-        - values-config.yaml
+        - values-cp.yaml
     repoURL: https://github.com/rioma0200/argocd-example-apps
     targetRevision: HEAD
