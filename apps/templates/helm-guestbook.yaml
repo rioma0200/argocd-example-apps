@@ -9,6 +9,8 @@ spec:
   destination:
     namespace: helm-guestbook
     server: {{ .Values.spec.destination.server }}
+  syncPolicy:
+    automated: {}
   project: default
   source:
     path: helm-guestbook
