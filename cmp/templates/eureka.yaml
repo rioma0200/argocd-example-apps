@@ -3,23 +3,16 @@ kind: Application
 metadata:
   name: eureka
   namespace: {{ .Values.namespace }}
-  annotations:
-    helm.sh/hook-delete-policy: hook-succeeded
-    helm.sh/hook-weight: "1"
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: {{ .Values.namespace }}
-    server: https://kubernetes.default.svc
+    server: {{ .Values.spec.destination.server }}
   syncPolicy:
     automated: {}
   project: default
   source:
-    repoURL: https://github.com/rioma0200/argocd-example-apps
-    targetRevision: HEAD
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
     path: eureka
-    helm:
-      valueFiles:
-        - values.yaml
-
