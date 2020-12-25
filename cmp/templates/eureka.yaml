@@ -16,7 +16,7 @@ spec:
     automated: {}
   project: default
   source:
-    path: cmp
+    path: eureka
     helm:
       valueFiles:
         - values-eureka.yaml
