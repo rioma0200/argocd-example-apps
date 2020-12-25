@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: helm-guestbook
-  namespace: global-area
+  namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: global-area
+    namespace: helm-guestbook
     server: {{ .Values.spec.destination.server }}
   syncPolicy:
     automated: {}
