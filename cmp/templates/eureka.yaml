@@ -19,6 +19,6 @@ spec:
     path: eureka
     helm:
       valueFiles:
-        - values-eureka.yaml
+        - values.yaml
     repoURL: https://github.com/rioma0200/argocd-example-apps
     targetRevision: HEAD
