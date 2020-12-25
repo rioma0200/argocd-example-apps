@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: after
+  name: health-check
   annotations:
     helm.sh/hook: post-install
     helm.sh/hook-delete-policy: hook-succeeded
@@ -12,6 +12,6 @@ spec:
       containers:
       - name: sleep
         image: alpine:latest
-        command: ["sleep", "10"]
+        command: ["sleep", "30"]
       restartPolicy: Never
   backoffLimit: 0
