@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: db-create
+  name: pre-sleep-60
   annotations:
     helm.sh/hook: pre-install
     helm.sh/hook-delete-policy: hook-succeeded
@@ -12,6 +12,6 @@ spec:
       containers:
       - name: sleep
         image: alpine:latest
-        command: ["sleep", "10"]
+        command: ["sleep", "60"]
       restartPolicy: Never
   backoffLimit: 0
