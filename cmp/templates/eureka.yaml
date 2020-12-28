@@ -8,15 +8,15 @@ metadata:
     helm.sh/hook-weight: "1"
 spec:
   destination:
-    namespace: global-test1
-    server: https://kubernetes.default.svc
+    namespace: global-test
+    server: {{ .Values.spec.destination.server }}
   syncPolicy:
     automated: {}
   project: default
   source:
-    path: cmp
+    path: cmp-apps
     helm:
       valueFiles:
         - values-eureka.yaml
-    repoURL: https://github.com/rioma0200/argocd-example-apps
-    targetRevision: HEAD
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}

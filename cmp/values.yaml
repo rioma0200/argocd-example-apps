@@ -1,0 +1,8 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/rioma0200/argocd-example-apps
+    targetRevision: HEAD
+
+namespace: global-test
