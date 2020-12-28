@@ -11,7 +11,9 @@ spec:
     namespace: {{ .Values.namespaceEast }}
     server: {{ .Values.spec.destination.server }}
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
   project: default
   source:
     path: cmp-apps
