@@ -1,8 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: post-sleep-30
-  namespace: {{ .Values.namespace }}
+  name: post-check-15s
   annotations:
     helm.sh/hook: post-install
     helm.sh/hook-delete-policy: hook-succeeded
@@ -13,6 +12,6 @@ spec:
       containers:
       - name: sleep
         image: alpine:latest
-        command: ["sleep", "30"]
+        command: ["sleep", "15"]
       restartPolicy: Never
   backoffLimit: 0
