@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c87874b-c56c-406d-ba05-b40b6379d09c" name="默认的" comment="默认的">
-      <change afterPath="$PROJECT_DIR$/cmp-apps/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmp/values.yaml" afterDir="false" />
+    <list default="true" id="9c87874b-c56c-406d-ba05-b40b6379d09c" name="默认的" comment="项目拆分，适配多apps发">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp/Chart.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/templates/_helpers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-apps/templates/_helpers.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-apps/templates/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/templates/eureka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp/templates/eureka.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/templates/namespaces.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp/templates/namespaces.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/templates/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-apps/templates/service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmp/values-eureka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-apps/values-eureka.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/.helmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/Chart.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/templates/NOTES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/templates/_helpers.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/templates/deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/templates/service.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/values-production.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp-apps/values-eureka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-apps/values-eureka.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608210383304</updated>
-      <workItem from="1609126342903" duration="4305000" />
+      <workItem from="1609126342903" duration="5015000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1608210451770</created>
@@ -443,14 +427,20 @@
       <option name="project" value="LOCAL" />
       <updated>1609134987944</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="项目拆分，适配多apps发">
+      <created>1609136479177</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1609136479177</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update apps" />
     <MESSAGE value="update cmp 6" />
     <MESSAGE value="update cmp 7" />
     <MESSAGE value="update cmp 8" />
@@ -475,23 +465,24 @@
     <MESSAGE value="update namespaces.yaml for global-area ns create" />
     <MESSAGE value="delete default values.yaml" />
     <MESSAGE value="update for only eureka app deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="update for only eureka app deploy" />
+    <MESSAGE value="项目拆分，适配多apps发" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目拆分，适配多apps发" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="608" y="116" width="1117" height="781" key="CommitChangelistDialog2" timestamp="1609135797046">
+    <state x="608" y="116" width="1117" height="781" key="CommitChangelistDialog2" timestamp="1609136477591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1406" y="116" width="1117" height="781" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1609128229984" />
-    <state x="608" y="116" width="994" height="808" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609135797046" />
+    <state x="608" y="116" width="994" height="808" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609136477591" />
     <state x="787" y="233" key="RollbackChangesDialog" timestamp="1609135690074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="233" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609135690074" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1609134990294">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1609136480913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1609128235138" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609134990294" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609136480913" />
     <state x="637" y="322" key="git4idea.merge.GitPullDialog" timestamp="1609126554801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
