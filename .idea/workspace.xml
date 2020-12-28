@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c87874b-c56c-406d-ba05-b40b6379d09c" name="默认的" comment="项目拆分，适配多apps发">
+    <list default="true" id="9c87874b-c56c-406d-ba05-b40b6379d09c" name="默认的" comment="修改fullnameOverride">
+      <change afterPath="$PROJECT_DIR$/cmp-apps/values-config-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp-apps/values-cp-web.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp-apps/values-yvs-api.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp/templates/config-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp/templates/cp-web.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp/templates/yvs-api-east.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmp/templates/yvs-api-north.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmp-apps/values-eureka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp-apps/values-eureka.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp/templates/eureka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp/templates/eureka.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp/templates/namespaces.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp/templates/namespaces.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmp/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmp/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +71,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -69,7 +82,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmp/templates" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -81,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\github\argocd-example-apps\cmp" />
       <recent name="E:\github\argocd-example-apps\cmp\templates" />
+      <recent name="E:\github\argocd-example-apps\cmp-apps" />
+      <recent name="E:\github\argocd-example-apps\cmp" />
       <recent name="E:\github\argocd-example-apps\helm-guestbook" />
       <recent name="E:\github\argocd-example-apps\eureka" />
-      <recent name="E:\github\argocd-example-apps\eureka\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\github\argocd-example-apps\cmp-apps" />
@@ -117,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608210383304</updated>
-      <workItem from="1609126342903" duration="5015000" />
+      <workItem from="1609126342903" duration="5931000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1608210451770</created>
@@ -434,14 +447,20 @@
       <option name="project" value="LOCAL" />
       <updated>1609136479177</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="修改fullnameOverride">
+      <created>1609137105651</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1609137105651</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update cmp 6" />
     <MESSAGE value="update cmp 7" />
     <MESSAGE value="update cmp 8" />
     <MESSAGE value="update cmp 9" />
@@ -466,23 +485,24 @@
     <MESSAGE value="delete default values.yaml" />
     <MESSAGE value="update for only eureka app deploy" />
     <MESSAGE value="项目拆分，适配多apps发" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目拆分，适配多apps发" />
+    <MESSAGE value="修改fullnameOverride" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改fullnameOverride" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="608" y="116" width="1117" height="781" key="CommitChangelistDialog2" timestamp="1609136477591">
+    <state x="608" y="116" width="1117" height="781" key="CommitChangelistDialog2" timestamp="1609137104319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1406" y="116" width="1117" height="781" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1609128229984" />
-    <state x="608" y="116" width="994" height="808" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609136477591" />
+    <state x="608" y="116" width="994" height="808" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609137104319" />
     <state x="787" y="233" key="RollbackChangesDialog" timestamp="1609135690074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="233" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609135690074" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1609136480913">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1609137107350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1609128235138" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609136480913" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609137107350" />
     <state x="637" y="322" key="git4idea.merge.GitPullDialog" timestamp="1609126554801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

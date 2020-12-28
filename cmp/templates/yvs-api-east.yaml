@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: eureka
+  name: yvs-api-east
   namespace: argocd
   annotations:
     helm.sh/hook-delete-policy: hook-succeeded
-    helm.sh/hook-weight: "1"
+    helm.sh/hook-weight: "3"
 spec:
   destination:
-    namespace: {{ .Values.namespace-global }}
+    namespace: {{ .Values.namespace-east }}
     server: {{ .Values.spec.destination.server }}
   syncPolicy:
     automated: {}
@@ -17,6 +17,6 @@ spec:
     path: cmp-apps
     helm:
       valueFiles:
-        - values-eureka.yaml
+        - values-yvs-api.yaml
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}

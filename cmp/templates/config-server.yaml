@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: eureka
+  name: config-server
   namespace: argocd
   annotations:
     helm.sh/hook-delete-policy: hook-succeeded
-    helm.sh/hook-weight: "1"
+    helm.sh/hook-weight: "2"
 spec:
   destination:
     namespace: {{ .Values.namespace-global }}
@@ -17,6 +17,6 @@ spec:
     path: cmp-apps
     helm:
       valueFiles:
-        - values-eureka.yaml
+        - values-config-server.yaml
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
