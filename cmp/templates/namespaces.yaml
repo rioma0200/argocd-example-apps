@@ -1,21 +1,21 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: {{ .Values.namespace-global }}
+  name: {{ .Values.namespaceGlobal }}
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: {{ .Values.namespace-east }}
+  name: {{ .Values.namespaceEast }}
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: {{ .Values.namespace-north }}
+  name: {{ .Values.namespaceNorth }}
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
 

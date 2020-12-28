@@ -8,7 +8,7 @@ metadata:
     helm.sh/hook-weight: "3"
 spec:
   destination:
-    namespace: {{ .Values.namespace-north }}
+    namespace: {{ .Values.namespaceNorth }}
     server: {{ .Values.spec.destination.server }}
   syncPolicy:
     automated: {}
